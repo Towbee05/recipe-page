@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        @apply list-disc
+    }
+    ol{
+        @apply list-decimal
+    }
+    ul, ol{
+        @apply ml-6
+    }
+}
+@layer components{
+    .heading{
+        @apply font-heading text-2xl font-medium text-custom-nutmeg
+    }
+}
